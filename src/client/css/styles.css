@@ -24,7 +24,7 @@ footer {
     margin-top: auto;
 }
 
-/* Improve form layout */
+/* Form Styling */
 form {
     max-width: 500px;
     margin: 20px auto;
@@ -37,12 +37,12 @@ form {
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+/* Buttons */
 button {
     width: 100%;
     padding: 10px;
@@ -51,12 +51,14 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #218838;
 }
-/* Style product list */
+
+/* Search Results */
 #search-results {
     list-style: none;
     padding: 0;
@@ -80,6 +82,7 @@ button:hover {
     font-size: 1.2em;
 }
 
+/* Edit & Delete Buttons */
 .edit-btn, .delete-btn {
     margin: 5px;
     padding: 8px 12px;
@@ -87,6 +90,7 @@ button:hover {
     cursor: pointer;
     border-radius: 4px;
     font-size: 0.9em;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .edit-btn {
@@ -106,7 +110,8 @@ button:hover {
 .delete-btn:hover {
     background-color: #c82333;
 }
-/* Sticky footer */
+
+/* Sticky Footer */
 footer {
     background-color: #222;
     color: white;
@@ -116,4 +121,95 @@ footer {
     margin-top: auto;
 }
 
+/* Product Card Styling */
+.product-card {
+    width: 300px; /* Fixed width */
+    height: 420px; /* Increased height to accommodate text and button */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+/* Product Images */
+.product-card img, .product-img {
+    width: 100%; /* Ensures the image stretches to fit */
+    height: 250px; /* Keeps all images the same height */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    border-radius: 5px;
+}
+
+/* Product Text */
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buy Button */
+.product-card .buy-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.product-card .buy-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Shopping Cart Styling */
+#cart-summary {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-summary ul {
+    padding: 0;
+}
+
+#cart-summary .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-summary .list-group-item:last-child {
+    border-bottom: none;
+}
+
+#cart-summary h5 {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+#cart-summary .btn-outline-danger {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
 
